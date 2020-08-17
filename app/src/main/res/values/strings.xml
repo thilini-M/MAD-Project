@@ -15,4 +15,8 @@
     <string name="product_price">Product Price</string>
     <string name="product_quantitiy">Product Quantitiy</string>
     <string name="ViewProductDetails">View Product Information</string>
+    <string name="_12_09_2020">12/09/2020</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="card_name">Card name...</string>
+    <string name="please_enter_your_payment_details">Please enter your payment details</string>
 </resources>
