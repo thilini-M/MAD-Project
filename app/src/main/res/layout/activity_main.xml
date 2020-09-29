@@ -4,63 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Bg"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/app_logo"
-        android:layout_width="330dp"
-        android:layout_height="438dp"
+        android:layout_width="388dp"
+        android:layout_height="337dp"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:background="@drawable/AppLogo"
-        android:src="@drawable/applogo" />
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/app_slogan"
-        android:layout_width="248dp"
+        android:layout_width="266dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="345dp"
-        android:layout_marginEnd="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="66dp"
         android:fontFamily="cursive"
         android:text="Connect"
         android:textAlignment="center"
         android:textColor="@color/cardview_light_background"
-        android:textSize="55sp"
+        android:textSize="70sp"
         android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/main_login_btn"
-        android:layout_width="375dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="17dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginEnd="26dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="27dp"
-        android:background="@color/cardview_light_background"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/button_background"
         android:padding="20dp"
         android:text="Already have an Account? Login"
         android:textAllCaps="false"
-        android:textColor="@color/colorCoral"
-        android:textSize="18sp" />
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/main_join_now_btn"
-        android:layout_width="match_parent"
+        android:layout_width="374dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/main_login_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginEnd="21dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="33dp"
-        android:background="@color/cardview_light_background"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/button_background"
         android:padding="20dp"
         android:text="Join Now"
         android:textAllCaps="false"
-        android:textColor="@color/colorCoral"
-        android:textSize="18sp" />
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
 
 </RelativeLayout>

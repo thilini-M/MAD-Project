@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cart">
-
+    tools:context=".CartActivity">
     <RelativeLayout
         android:id="@+id/r111"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
         android:layout_alignParentTop="true"
-        android:background="@color/colorCoral">
-
+        >
         <TextView
             android:id="@+id/total_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="My Cart"
+            android:text="Total Price"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
             android:textAlignment="center"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="30sp"
+            android:layout_marginTop="10dp"
 
             />
     </RelativeLayout>
@@ -38,48 +37,24 @@
         android:textSize="20dp"
         android:visibility="gone"
         />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r111"
+        android:layout_above="@+id/next_btn"
+        ></androidx.recyclerview.widget.RecyclerView>
 
     <Button
         android:id="@+id/next_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorCoral"
+        android:background="@color/colorPrimaryDark"
         android:text="Next"
         android:textColor="@android:color/white"
         android:textSize="25dp"
 
 
         />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="378dp"
-        android:layout_height="207dp"
-        android:layout_above="@+id/next_btn"
-        android:layout_below="@+id/r111"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="385dp"
-        android:background="@color/colorCoral"
-        android:text="@string/ViewProductDetails"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="367dp"
-        android:layout_height="194dp"
-        android:layout_above="@+id/next_btn"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="-308dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="113dp"
-        android:background="@color/colorCoral"
-        android:text="@string/ViewProductDetails"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="24sp" />
-
 </RelativeLayout>

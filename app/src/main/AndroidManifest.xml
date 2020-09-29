@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.onlineshoppingapp">
+    package="com.example.onlineshop">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -12,23 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Payment"></activity>
-        <activity android:name=".SplashScreen" />
-        <activity android:name=".Settings" />
-        <activity android:name=".SearchProducts" />
-        <activity android:name=".Register" />
-        <activity android:name=".ProductDetails" />
-        <activity android:name=".Login" />
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".SearchProductsActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".LoginActivity" />
         <activity
-            android:name=".Home"
+            android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ConfirmFinalOrder" />
-        <activity android:name=".Cart" />
-        <activity android:name=".AdminUserProducts" />
-        <activity android:name=".AdminNewOrders" />
-        <activity android:name=".AdminCategory" />
-        <activity android:name=".AdminAddNewProducts" />
+        <activity android:name=".ConfirmFinalOrderActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".AdminUserProductsActivity" />
+        <activity android:name=".AdminNewOrdersActivity" />
+        <activity android:name=".AdminCategoryActivity" />
+        <activity android:name=".AdminAddNewProductActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
